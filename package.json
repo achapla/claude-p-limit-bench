@@ -1,0 +1,23 @@
+{
+  "name": "claude-p-limit-bench",
+  "version": "0.1.0",
+  "description": "Measures how much of the Claude subscription limit claude -p uses, compared with an interactive session doing the same work.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "bench": "tsx src/bench.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lydell/node-pty": "1.2.0-beta.18"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

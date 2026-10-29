@@ -1,0 +1,48 @@
+name: Share results
+description: Share the numbers from a run of the benchmark on your account.
+title: "Results: <plan>, <model>, <date>"
+labels: ["results"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! Results that show no difference are just as useful.
+        Please follow the rules for a fair test in the README: nothing else may use the account during a batch.
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Plan
+      options: ["Pro", "Max 5x", "Max 20x", "Team", "Enterprise", "Other"]
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and effort
+      placeholder: "Opus 5.5, effort medium"
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: Date, start time and time zone
+      placeholder: "29 October 2026, 09:40, IST (UTC+5:30)"
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command you ran
+      placeholder: "pnpm bench run --runs 7 --rounds 2"
+  - type: textarea
+    id: report
+    attributes:
+      label: Output of pnpm bench report --markdown
+      description: It includes your Claude Code version, system and time zone.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything unusual, for example a failed run, a warning about other claude processes, or a limit reset during a run.

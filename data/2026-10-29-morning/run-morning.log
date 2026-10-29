@@ -1,0 +1,41 @@
+$ tsx src/bench.ts run --runs 7 --rounds 2
+warning: 4 other claude process(es) running. If they use this account, the % of this batch is wrong.
+p: before 1% (5-hour), 79% (weekly)
+  run 1/7: 16 calls, 250.9k priced tokens, $0.833
+  run 2/7: 16 calls, 219.6k priced tokens, $0.705
+  run 3/7: 16 calls, 156.2k priced tokens, $0.444
+  run 4/7: 16 calls, 156.4k priced tokens, $0.445
+  run 5/7: 15 calls, 187.8k priced tokens, $0.582
+  run 6/7: 15 calls, 150.3k priced tokens, $0.435
+  run 7/7: 16 calls, 216.6k priced tokens, $0.693
+p: after 20% (5-hour), 80% (weekly)
+warning: 6 other claude process(es) running. If they use this account, the % of this batch is wrong.
+interactive: before 20% (5-hour), 80% (weekly)
+  run 1/7: 16 calls, 227.3k priced tokens
+  run 2/7: 16 calls, 163.4k priced tokens
+  run 3/7: 16 calls, 163.0k priced tokens
+  run 4/7: 16 calls, 211.8k priced tokens
+  run 5/7: 16 calls, 162.8k priced tokens
+  run 6/7: 16 calls, 162.3k priced tokens
+  run 7/7: 16 calls, 163.5k priced tokens
+interactive: after 28% (5-hour), 82% (weekly)
+warning: 6 other claude process(es) running. If they use this account, the % of this batch is wrong.
+interactive: before 28% (5-hour), 82% (weekly)
+  run 1/7: 16 calls, 162.7k priced tokens
+  run 2/7: 16 calls, 162.5k priced tokens
+  run 3/7: 16 calls, 163.8k priced tokens
+  run 4/7: 16 calls, 163.0k priced tokens
+  run 5/7: 16 calls, 162.9k priced tokens
+  run 6/7: 16 calls, 162.8k priced tokens
+  run 7/7: 16 calls, 162.8k priced tokens
+interactive: after 36% (5-hour), 82% (weekly)
+warning: 6 other claude process(es) running. If they use this account, the % of this batch is wrong.
+p: before 36% (5-hour), 82% (weekly)
+  run 1/7: 16 calls, 219.7k priced tokens, $0.705
+  run 2/7: 16 calls, 157.1k priced tokens, $0.448
+  run 3/7: 16 calls, 156.3k priced tokens, $0.445
+  run 4/7: 16 calls, 216.6k priced tokens, $0.692
+  run 5/7: 16 calls, 156.1k priced tokens, $0.444
+  run 6/7: 15 calls, 150.0k priced tokens, $0.434
+  run 7/7: 15 calls, 148.7k priced tokens, $0.430
+p: after 52% (5-hour), 84% (weekly)
